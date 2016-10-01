@@ -1042,7 +1042,6 @@ namespace QUT.Gplex.Automaton
                 if (myTask.EmitInfoHeader) {
                     sWrtr.WriteLine( "//  Machine:  " + Environment.MachineName );
                     sWrtr.WriteLine( "//  DateTime: " + DateTime.Now.ToString() );
-                    sWrtr.WriteLine( "//  UserName: " + Environment.UserName );
                 }
                 sWrtr.WriteLine( "//  GPLEX input file <" + myTask.InputInfo + ">" );
                 sWrtr.WriteLine( "//  GPLEX frame file <" + myTask.FrameName + ">" );

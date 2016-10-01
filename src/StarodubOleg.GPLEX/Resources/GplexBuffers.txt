@@ -1,12 +1,9 @@
-    [Serializable]
     public class BufferException : Exception
     {
         public BufferException() { }
         public BufferException(string message) : base(message) { }
         public BufferException(string message, Exception innerException)
             : base(message, innerException) { }
-        protected BufferException(SerializationInfo info, StreamingContext context)
-            : base(info, context) { }
     }
 
     public abstract class ScanBuff
@@ -326,7 +323,7 @@
             get
             {
                 StreamReader rdr = NextBlk.Target as StreamReader;
-                return (rdr == null ? "raw-bytes" : rdr.CurrentEncoding.BodyName);
+                return (rdr == null ? "raw-bytes" : rdr.CurrentEncoding.EncodingName);
             }
         }
 

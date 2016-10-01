@@ -6,15 +6,11 @@
 //  kjg 08 September 2008 2006
 //
 
-using System;
-using System.IO;
-using System.Text;
-using System.Collections.Generic;
 using QUT.Gplex.Parser;
 
 namespace QUT.Gplex.Lexer
 {
-    internal partial class Scanner
+	internal partial class Scanner
     {
         public ErrorHandler yyhdlr;
         private int badCount;

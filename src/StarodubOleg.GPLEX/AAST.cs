@@ -7,11 +7,11 @@ using System;
 using System.IO;
 using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.Serialization;
 using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.Text;
 using QUT.Gplex;
+using System.Reflection;
 
 namespace QUT.Gplex.Parser {
     /// <summary>
@@ -233,8 +233,8 @@ namespace QUT.Gplex.Parser {
             string mthIdnt = mthName.Substring( offset + 1 );
 
             try {
-                System.Reflection.Assembly asm = System.Reflection.Assembly.LoadFrom( asmName );
-                System.Type[] types = asm.GetExportedTypes();
+                var asm = Assembly.Load(new AssemblyName(asmName));
+                var types = asm.GetExportedTypes();
                 foreach (Type type in types) {
                     if (type.FullName.Equals( clsName, StringComparison.OrdinalIgnoreCase ) ||
                         type.Name.Equals( clsName, StringComparison.OrdinalIgnoreCase )) {
@@ -827,7 +827,6 @@ namespace QUT.Gplex.Parser {
     /// These exceptions cannot escape beyond the enclosing
     /// call of Parse().
     /// </summary>
-    [Serializable]
     [SuppressMessage( "Microsoft.Design", "CA1064:ExceptionsShouldBePublic" )]
     // Reason for FxCop message suppression -
     // This exception cannot escape from the local context
@@ -838,8 +837,6 @@ namespace QUT.Gplex.Parser {
         string text;
 
         internal RegExException( int errorNum, int stringIx, int count, string message ) { errNo = errorNum; index = stringIx; length = count; text = message; }
-
-        protected RegExException( SerializationInfo i, StreamingContext c ) : base( i, c ) { }
 
         internal RegExException AdjustIndex( int delta ) { this.index += delta; return this; }
 

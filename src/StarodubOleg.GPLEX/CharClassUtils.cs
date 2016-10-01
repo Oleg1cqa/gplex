@@ -357,7 +357,7 @@ namespace QUT.Gplex
         {
             if (chr == '_')
                 return true;
-            UnicodeCategory theCat = Char.GetUnicodeCategory(chr);
+            UnicodeCategory theCat = CharUnicodeInfo.GetUnicodeCategory(chr);
             return idStart[(int)theCat];
         }
 
@@ -365,31 +365,31 @@ namespace QUT.Gplex
         {
             if (str[index] == '_')
                 return true;
-            UnicodeCategory theCat = Char.GetUnicodeCategory(str, index);
+            UnicodeCategory theCat = CharUnicodeInfo.GetUnicodeCategory(str, index);
             return idStart[(int)theCat];
         }
 
         internal static bool IsIdPart(char chr)
         {
-            UnicodeCategory theCat = Char.GetUnicodeCategory(chr);
+            UnicodeCategory theCat = CharUnicodeInfo.GetUnicodeCategory(chr);
             return idPart[(int)theCat];
         }
 
         internal static bool IsIdPart(string str, int index)
         {
-            UnicodeCategory theCat = Char.GetUnicodeCategory(str, index);
+            UnicodeCategory theCat = CharUnicodeInfo.GetUnicodeCategory(str, index);
             return idPart[(int)theCat];
         }
 
         internal static bool IsFormat(char chr)
         {
-            UnicodeCategory theCat = Char.GetUnicodeCategory(chr);
+            UnicodeCategory theCat = CharUnicodeInfo.GetUnicodeCategory(chr);
             return theCat == UnicodeCategory.Format;
         }
 
         internal static bool IsFormat(string str, int index)
         {
-            UnicodeCategory theCat = Char.GetUnicodeCategory(str, index);
+            UnicodeCategory theCat = CharUnicodeInfo.GetUnicodeCategory(str, index);
             return theCat == UnicodeCategory.Format;
         }
     }

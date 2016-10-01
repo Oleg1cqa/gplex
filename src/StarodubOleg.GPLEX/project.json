@@ -1,0 +1,30 @@
+﻿{
+  "version": "0.1.0-alpha1-1",
+  "description": "Tools based on Gardens Point Scanner Generator version 1.2.2",
+  "authors": [ "John Gough", "Starodub Oleg" ],
+  "copyright": "John Gough, 2006-2014, Starodub Oleg, 2016",
+
+  "packOptions": {
+    "tags": [ "GPLEX", "Scaner", "netcore" ],
+    "projectUrl": "https://github.com/totht91/TextTemplating",
+    "licenseUrl": "http://www.opensource.org/licenses/MIT"
+  },
+
+  "buildOptions": {
+    "emitEntryPoint": true,
+    "outputName": "dotnet-gplex",
+    "embed": [ "Resources/**" ]
+  },
+
+  "dependencies": {
+    "Microsoft.NETCore.App": {
+      "type": "platform",
+      "version": "1.0.1"
+    }
+  },
+
+  "frameworks": {
+    "netcoreapp1.0": {
+    }
+  }
+}

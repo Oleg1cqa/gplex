@@ -509,7 +509,7 @@ namespace QUT.Gplex.Automaton
             /// <param name="nxt">The destination state</param>
             private void AddClsTrans(BitArray cls, NState nxt)
             {
-                for (int i = 0; i < cls.Count; i++)
+                for (int i = 0; i < cls.Length; i++)
                     if (cls[i]) AddRawTransition(i, nxt);
             }
 
@@ -553,7 +553,7 @@ namespace QUT.Gplex.Automaton
             /// <param name="nxt">Destination state</param>
             public void AddEpsTrns(NState nxt)
             {
-                int count = epsilons.Count;
+                int count = epsilons.Length;
                 if (count < myNfaInst.MaxEps) epsilons.Length = myNfaInst.MaxEps;
                 if (!epsilons[nxt.ord])
                 {
