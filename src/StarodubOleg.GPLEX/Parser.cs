@@ -2,11 +2,10 @@
 // Copyright (c) Wayne Kelly, John Gough, QUT 2005-2014
 // (see accompanying GPPGcopyright.rtf)
 
-// GPPG version 1.5.2
+// GPPG version 0.1.0.0
 // Machine:  HOME
-// DateTime: 01.10.2016 15:32:57
-// UserName: Олег
-// Input file <gplex.y - 01.10.2016 15:08:07>
+// DateTime: 01.10.2016 22:47:56
+// Input file <D:\Проекты\gplex\src\StarodubOleg.GPLEX/gplex.y - 01.10.2016 15:08:07>
 
 // options: no-lines gplex
 
@@ -32,7 +31,7 @@ internal enum Tokens {error=2,EOF=3,csKeyword=4,csIdent=5,csNumber=6,
     csCommentL=55,errTok=56,repErr=57};
 
 // Abstract base class for GPLEX scanners
-[GeneratedCodeAttribute( "Gardens Point Parser Generator", "1.5.2")]
+[GeneratedCodeAttribute( "Gardens Point Parser Generator", "0.1.0.0")]
 internal abstract class ScanBase : AbstractScanner<int,LexSpan> {
   private LexSpan __yylloc = new LexSpan();
   public override LexSpan yylloc { get { return __yylloc; } set { __yylloc = value; } }
@@ -40,7 +39,7 @@ internal abstract class ScanBase : AbstractScanner<int,LexSpan> {
 }
 
 // Utility class for encapsulating token information
-[GeneratedCodeAttribute( "Gardens Point Parser Generator", "1.5.2")]
+[GeneratedCodeAttribute( "Gardens Point Parser Generator", "0.1.0.0")]
 internal class ScanObj {
   public int token;
   public int yylval;
@@ -50,7 +49,7 @@ internal class ScanObj {
   }
 }
 
-[GeneratedCodeAttribute( "Gardens Point Parser Generator", "1.5.2")]
+[GeneratedCodeAttribute( "Gardens Point Parser Generator", "0.1.0.0")]
 internal partial class Parser: ShiftReduceParser<int, LexSpan>
 {
 #pragma warning disable 649

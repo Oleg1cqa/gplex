@@ -6,7 +6,7 @@
 //
 //  GPLEX Version:  0.1.0.0
 //  Machine:  HOME
-//  DateTime: 01.10.2016 19:17:22
+//  DateTime: 01.10.2016 22:47:56
 //  GPLEX input file <D:\Проекты\gplex\src\StarodubOleg.GPLEX/gplex.lex - 01.10.2016 15:08:07>
 //  GPLEX frame file <embedded resource>
 //
