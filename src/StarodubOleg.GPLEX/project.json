@@ -1,5 +1,5 @@
 ﻿{
-  "version": "0.1.0-alpha1-1",
+  "version": "0.1.0-alpha1-3",
   "description": "Tools based on Gardens Point Scanner Generator version 1.2.2",
   "authors": [ "John Gough", "Starodub Oleg" ],
   "copyright": "John Gough, 2006-2014, Starodub Oleg, 2016",
@@ -23,8 +23,16 @@
     }
   },
 
+  "tools": {
+    "StarodubOleg.GPLEX": "0.1.0-alpha1-2"
+  },
+
   "frameworks": {
     "netcoreapp1.0": {
     }
+  },
+
+  "scripts": {
+    "precompile": [ "dotnet gplex %project:Directory%/gplex.lex" ]
   }
 }

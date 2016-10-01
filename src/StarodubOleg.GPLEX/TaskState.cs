@@ -488,7 +488,6 @@ namespace QUT.Gplex.Automaton
 				writer.WriteLine("using System.Text;");
 				writer.WriteLine("using System.Collections.Generic;");
 				writer.WriteLine("using System.Diagnostics.CodeAnalysis;");
-				writer.WriteLine("using System.Runtime.Serialization;");
 				writer.WriteLine("using System.Globalization;");
 				writer.WriteLine();
 				writer.WriteLine("namespace QUT.GplexBuffers");

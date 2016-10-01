@@ -4,11 +4,10 @@
 //  Output produced by GPLEX is the property of the user.
 //  See accompanying file GPLEXcopyright.rtf.
 //
-//  GPLEX Version:  1.2.2
+//  GPLEX Version:  0.1.0.0
 //  Machine:  HOME
-//  DateTime: 01.10.2016 15:32:58
-//  UserName: Олег
-//  GPLEX input file <gplex.lex - 01.10.2016 15:08:07>
+//  DateTime: 01.10.2016 19:17:22
+//  GPLEX input file <D:\Проекты\gplex\src\StarodubOleg.GPLEX/gplex.lex - 01.10.2016 15:08:07>
 //  GPLEX frame file <embedded resource>
 //
 //  Option settings: unicode, verbose, parser, stack, minimize
@@ -32,11 +31,11 @@ using System.Text;
 using System.Globalization;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
+using System.Reflection;
 
 using QUT.GplexBuffers;
 using System.Collections;
 using QUT.Gplex.Parser;
-using System.Reflection;
 
 namespace QUT.Gplex.Lexer
 {   
