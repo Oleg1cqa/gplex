@@ -6,8 +6,8 @@
 
   "packOptions": {
     "tags": [ "GPLEX", "Scaner", "netcore" ],
-    "projectUrl": "https://github.com/totht91/TextTemplating",
-    "licenseUrl": "http://www.opensource.org/licenses/MIT"
+    "projectUrl": "https://github.com/Oleg1cqa/gplex",
+    "licenseUrl": "https://github.com/Oleg1cqa/gplex/blob/master/License.md"
   },
 
   "buildOptions": {
