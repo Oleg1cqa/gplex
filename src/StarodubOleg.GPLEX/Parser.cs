@@ -4,7 +4,7 @@
 
 // GPPG version 0.1.0.0
 // Machine:  HOME
-// DateTime: 01.10.2016 22:47:56
+// DateTime: 02.10.2016 13:24:29
 // Input file <D:\Проекты\gplex\src\StarodubOleg.GPLEX/gplex.y - 01.10.2016 15:08:07>
 
 // options: no-lines gplex
@@ -14,7 +14,7 @@ using System.Collections.Generic;
 using System.CodeDom.Compiler;
 using System.Globalization;
 using System.Text;
-using QUT.Gppg;
+using StarodubOleg.GPPG.Runtime;
 using System.Collections;
 
 namespace QUT.Gplex.Parser
